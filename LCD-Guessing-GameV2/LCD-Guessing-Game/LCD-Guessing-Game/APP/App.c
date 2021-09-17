@@ -10,7 +10,6 @@ void app_init()
 	config timer_conf = {timer1, compare, f_cpu_clk_1024, ticks}; // initialize timer1
 	Timer_init(&timer_conf);
 	lcd_config lcd_conf = {PD,PA,ctrl_pins,data_pins}; // initialize LCD
-	DIO_init(PC,button);  // initialize Button pin
 	LCD_init(lcd_conf);
 	user_number = 0; //initial value
 	keypad_init(PC);
