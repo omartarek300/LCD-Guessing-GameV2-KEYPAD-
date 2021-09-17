@@ -6,8 +6,6 @@
  */ 
 
 #include "APP/App.h"
-#define ctrl_pins 0x07 // fist 3 pins
-#define data_pins 0xf0 //higher data pins
 int main(void)
 {
 	app_init();
