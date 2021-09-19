@@ -127,9 +127,9 @@ void LCD_intgerToString(uint8_t data)
 		str[iterator] = data + '0'; // last number
 		iterator++;
 		str[iterator] = '\0';	 // null terminator
-		for(uint8_t num_index = 0; num_index < sizeof(str)/2; num_index++)
+		for(uint8_t num_index = 0; num_index < iterator/2; num_index++) 
 		{
-			swap(&str[num_index], &str[ sizeof(str) - num_index-1]);
+			swap(&str[num_index], &str[ iterator - num_index-1]);
 		}
 	}
 	send_string(str);

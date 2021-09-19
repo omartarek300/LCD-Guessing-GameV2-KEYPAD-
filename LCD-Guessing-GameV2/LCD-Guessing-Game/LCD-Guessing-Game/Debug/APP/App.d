@@ -6,6 +6,7 @@ APP/App.d APP/App.o: ../APP/App.c ../APP/App.h \
  ../APP/../ECUAL/../MCAL/../MC/../types.h \
  ../APP/../ECUAL/../MCAL/../bit_operations.h \
  ../APP/../ECUAL/../MCAL/timer.h ../APP/../ECUAL/../MCAL/../types.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
  ../APP/../ECUAL/keypad.h ../APP/../ECUAL/../types.h \
  ../APP/../ECUAL/timers_HAL.h ../APP/../ECUAL/../bit_operations.h
 
@@ -28,6 +29,8 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 ../APP/../ECUAL/../MCAL/timer.h:
 
 ../APP/../ECUAL/../MCAL/../types.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
 
 ../APP/../ECUAL/keypad.h:
 

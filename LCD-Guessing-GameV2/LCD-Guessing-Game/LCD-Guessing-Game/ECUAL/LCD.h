@@ -11,6 +11,7 @@
 #define UPPER_PORT_PINS
 #include "../MCAL/dio.h"
 #include "../MCAL/timer.h"
+#include <string.h>
 /* LCD Modes */
 #define bit_mode 4
 #define Four_bit_mode 4
