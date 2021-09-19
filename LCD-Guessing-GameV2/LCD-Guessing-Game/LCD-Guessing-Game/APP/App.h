@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include "../ECUAL/LCD.h"
 #include "../ECUAL/keypad.h"
+#include "../ECUAL/timers_HAL.h"
 #define button 0x00
 #define ticks (float)3906.25 // 4 seconds
 #define ctrl_pins 0x07 // fist 3 pins

@@ -7,12 +7,15 @@
 #include "App.h"
 void app_init()
 {
-	config timer_conf = {timer1, compare, f_cpu_clk_1024, ticks}; // initialize timer1
-	Timer_init(&timer_conf);
+	config timer_configs = {timer1, compare, f_cpu_clk_1024, ticks}; // initialize timer1
+	initiate_timer(&timer_configs);
+	
 	lcd_config lcd_conf = {PD,PA,ctrl_pins,data_pins}; // initialize LCD
 	LCD_init(lcd_conf);
-	user_number = 0; //initial value
+	
 	keypad_init(PC);
+	
+	user_number = 0; //initial value
 	random_variable = random_num(min,max);
 }
 
@@ -21,7 +24,7 @@ void get_user_press()
 	 key = get_key();
 	if(key != enter)
 	{
-		user_number *= 10;
+		user_number *= 10; // upgrade number value
 		user_number += key;
 		go_to_row_column(second_row,7);
 		LCD_intgerToString(user_number);	

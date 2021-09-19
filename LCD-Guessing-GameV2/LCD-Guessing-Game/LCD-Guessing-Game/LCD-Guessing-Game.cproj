@@ -141,6 +141,12 @@
     <Compile Include="ECUAL\LCD.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="ECUAL\timers_HAL.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ECUAL\timers_HAL.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
